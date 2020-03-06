@@ -3,5 +3,5 @@ FROM alpine:3.7
 ADD server /server
 ADD run-server /server/run-server
 RUN chmod 755 /server/run-server
-CMD /server/run-server
+CMD sh /server/run-server
 EXPOSE 1688
